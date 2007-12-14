@@ -6,7 +6,6 @@ Name: %{name}
 Summary: A Commdore 64 music player and SID chip emulator for X11
 Version: %{version}
 Release: %{release}
-Icon: %{name}.xpm
 License: GPL
 URL: http://www.geocities.com/SiliconValley/Lakes/5147/
 Group: Sound
