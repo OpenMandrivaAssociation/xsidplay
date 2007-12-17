@@ -14,7 +14,6 @@ Source1: %{name}-48.png
 Source2: %{name}-32.png
 Source3: %{name}-16.png
 Patch: xsidplay-1.6.5.2-gcc4.patch.bz2
-BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: qt3-devel 
 BuildRequires: libsidplay-devel < 2
 BuildRequires: sidplay2-devel >= 2.1.0-0.20020903.1mdk
