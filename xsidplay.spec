@@ -69,18 +69,8 @@ unset LDFLAGS
 %install
 rm -rf $RPM_BUILD_ROOT
 %makeinstall_std pkgdatadir=%{_iconsdir}
-mkdir -p $RPM_BUILD_ROOT/%{_menudir}
 # menu causes rpmlint warning, but that's ok, xsidplay is provided by
 # alternative
-cat << EOF > $RPM_BUILD_ROOT/%{_menudir}/xsidplay
-?package(xsidplay):\
-needs="x11"\
-section="Multimedia/Sound"\
-title="Xsidplay"\
-longtitle="QT version of the C64 music player"\
-command="xsidplay"\
-icon="xsidplay.png" xdg="true"
-EOF
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
@@ -136,7 +126,6 @@ update-alternatives --remove xsidplay %{_bindir}/xsidplay-libsidplay2
 %{_iconsdir}/mini/xsidplay.png
 %{_liconsdir}/xsidplay.png
 %_datadir/applications/mandriva-*
-%{_menudir}/xsidplay
 %{_mandir}/man1/xsidplay.1*
 
 %files libsidplay2
