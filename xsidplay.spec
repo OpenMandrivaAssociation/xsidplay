@@ -100,12 +100,16 @@ rm -f %buildroot%{_datadir}/icons/xsidplay.xpm
 rm -rf $RPM_BUILD_ROOT
 
 %post
+%if %mdkversion < 200900
 %{update_menus}
+%endif
 update-alternatives --install %{_bindir}/xsidplay xsidplay %{_bindir}/xsidplay-libsidplay1 10
 [ -e %{_bindir}/%{name} ] || update-alternatives --auto %{name}
 
 %postun
+%if %mdkversion < 200900
 %{clean_menus}
+%endif
 [ "$1" = "0" ] || exit 0
 update-alternatives --remove xsidplay %{_bindir}/xsidplay-libsidplay1
 
