@@ -1,19 +1,19 @@
 %define name xsidplay
-%define version 1.6.5.2
-%define release %mkrel 4
+%define version 2.0.2
+%define release %mkrel 1
 
 Name: %{name}
 Summary: A Commdore 64 music player and SID chip emulator for X11
 Version: %{version}
 Release: %{release}
-License: GPL
-URL: http://www.geocities.com/SiliconValley/Lakes/5147/
+License: GPLv2+
+URL: http://sf.net/projects/xsidplay2
 Group: Sound
-Source: http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/packages/%{name}-%{version}.tar.bz2
+Source: %{name}-%{version}.tar.bz2
 Source1: %{name}-48.png
 Source2: %{name}-32.png
 Source3: %{name}-16.png
-Patch: xsidplay-1.6.5.2-gcc4.patch.bz2
+Patch: xsidplay-2.0.2-gcc4.3.patch
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: qt3-devel 
 BuildRequires: libsidplay-devel < 2
