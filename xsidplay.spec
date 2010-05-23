@@ -1,6 +1,6 @@
 %define name xsidplay
 %define version 2.0.3
-%define release %mkrel 2
+%define release %mkrel 3
 
 Name: %{name}
 Summary: A Commdore 64 music player and SID chip emulator for X11
@@ -18,7 +18,6 @@ BuildRequires: qt3-devel
 BuildRequires: libsidplay-devel < 2
 BuildRequires: sidplay2-devel >= 2.1.1-8mdv
 BuildRequires: tsid-devel >= 0.6
-BuildRequires: libarts-devel
 BuildRequires: libesound-devel	
 BuildRequires: libalsa-devel
 
