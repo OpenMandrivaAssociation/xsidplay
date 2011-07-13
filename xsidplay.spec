@@ -1,6 +1,6 @@
 %define name xsidplay
 %define version 2.0.3
-%define release %mkrel 3
+%define release %mkrel 4
 
 Name: %{name}
 Summary: A Commdore 64 music player and SID chip emulator for X11
