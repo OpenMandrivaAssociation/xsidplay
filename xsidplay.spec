@@ -1,7 +1,7 @@
 Name:		xsidplay
 Summary:	A Commdore 64 music player and SID chip emulator for X11
 Version:	2.0.3
-Release:	5
+Release:	6
 License:	GPLv2+
 Group:		Sound
 URL:		http://sf.net/projects/xsidplay2
