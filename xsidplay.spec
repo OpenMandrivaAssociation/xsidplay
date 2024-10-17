@@ -4,7 +4,7 @@ Version:	2.0.3
 Release:	6
 License:	GPLv2+
 Group:		Sound
-URL:		http://sf.net/projects/xsidplay2
+URL:		https://sf.net/projects/xsidplay2
 Source:		http://prdownloads.sourceforge.net/xsidplay2/%{name}-%{version}.tar.bz2
 Source1:	%{name}-48.png
 Source2:	%{name}-32.png
