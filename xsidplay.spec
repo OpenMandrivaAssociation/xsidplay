@@ -9,6 +9,9 @@ Source:		http://prdownloads.sourceforge.net/xsidplay2/%{name}-%{version}.tar.bz2
 Source1:	%{name}-48.png
 Source2:	%{name}-32.png
 Source3:	%{name}-16.png
+BuildRequires:	autoconf
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:	libsidplay-devel < 2
 BuildRequires:	qt3-devel
 BuildRequires:	tsid-devel >= 0.6
